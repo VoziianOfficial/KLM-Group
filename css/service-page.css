@@ -2326,3 +2326,241 @@
         display: none !important;
     }
 }
+
+/* =====================================================
+   Service Hero Title — Animated Gradient + Hover
+   Put at the VERY END of service-page.css
+===================================================== */
+
+.service-hero--reference .service-hero__title {
+    position: relative !important;
+    display: block !important;
+    max-width: 860px !important;
+    margin: 0 auto !important;
+    overflow: visible !important;
+
+    color: transparent !important;
+    background:
+        linear-gradient(115deg,
+            #050505 0%,
+            #050505 22%,
+            #6bcf1f 38%,
+            #a8ff3e 50%,
+            #eaffb8 58%,
+            #7ee52a 70%,
+            #050505 88%,
+            #050505 100%) !important;
+    background-size: 240% 100% !important;
+    background-position: 0% 50% !important;
+
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+
+    text-shadow:
+        0 0 0 rgba(168, 255, 62, 0),
+        0 18px 42px rgba(5, 5, 5, 0.08) !important;
+
+    transition:
+        background-position 0.9s ease,
+        filter 0.45s ease,
+        transform 0.45s ease,
+        text-shadow 0.45s ease,
+        letter-spacing 0.45s ease !important;
+}
+
+/* если внутри h1 есть span — тоже делаем прозрачным */
+.service-hero--reference .service-hero__title span {
+    color: inherit !important;
+    background: inherit !important;
+    background-size: inherit !important;
+    background-position: inherit !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+}
+
+/* мягкое постоянное переливание */
+.service-hero--reference .service-hero__title {
+    animation: serviceTitleGradient 7s ease-in-out infinite !important;
+}
+
+@keyframes serviceTitleGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* hover: дороже, ярче, но без дергания */
+.service-hero--reference .service-hero__title:hover {
+    background-position: 100% 50% !important;
+    filter: saturate(1.18) contrast(1.06) !important;
+    transform: translateY(-2px) !important;
+    letter-spacing: -0.07em !important;
+    text-shadow:
+        0 0 18px rgba(168, 255, 62, 0.22),
+        0 18px 42px rgba(5, 5, 5, 0.1) !important;
+}
+
+/* аккуратная световая линия при наведении */
+.service-hero--reference .service-hero__title::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    width: 0;
+    height: 3px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, transparent, #a8ff3e, transparent);
+    opacity: 0;
+    transform: translateX(-50%);
+    transition:
+        width 0.45s ease,
+        opacity 0.45s ease;
+}
+
+.service-hero--reference .service-hero__title:hover::after {
+    width: min(420px, 72%);
+    opacity: 1;
+}
+
+/* на мобилках hover не нужен, оставляем просто красивый градиент */
+@media (hover: none) {
+    .service-hero--reference .service-hero__title:hover {
+        transform: none !important;
+        filter: none !important;
+        text-shadow: none !important;
+    }
+
+    .service-hero--reference .service-hero__title:hover::after {
+        width: 0;
+        opacity: 0;
+    }
+}
+
+/* если пользователь отключил анимации */
+@media (prefers-reduced-motion: reduce) {
+    .service-hero--reference .service-hero__title {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+/* =====================================================
+   Service Hero Right Proof Block
+   replaces service-hero__right
+===================================================== */
+
+.service-hero--reference .service-hero__proof {
+    position: absolute !important;
+    right: clamp(72px, 8.5vw, 128px) !important;
+    top: 48% !important;
+    z-index: 18 !important;
+
+    display: grid !important;
+    justify-items: center !important;
+    gap: 6px !important;
+
+    min-width: 150px !important;
+    text-align: center !important;
+    color: #050505 !important;
+
+    transform: translateY(-50%) !important;
+}
+
+.service-hero--reference .service-hero__proof-label {
+    color: rgba(5, 5, 5, 0.48) !important;
+    font-size: 10px !important;
+    font-weight: 900 !important;
+    line-height: 1 !important;
+    letter-spacing: 0.12em !important;
+    text-transform: uppercase !important;
+}
+
+.service-hero--reference .service-hero__proof strong {
+    max-width: 180px !important;
+    color: #050505 !important;
+    font-size: clamp(23px, 1.95vw, 31px) !important;
+    font-weight: 900 !important;
+    line-height: 0.95 !important;
+    letter-spacing: -0.055em !important;
+}
+
+.service-hero--reference .service-hero__proof small {
+    max-width: 170px !important;
+    color: rgba(5, 5, 5, 0.62) !important;
+    font-size: 11px !important;
+    font-weight: 800 !important;
+    line-height: 1.35 !important;
+}
+
+/* stars внутри нового блока */
+.service-hero--reference .service-hero__proof .service-hero__stars {
+    display: flex !important;
+    gap: 4px !important;
+    margin-bottom: 3px !important;
+}
+
+.service-hero--reference .service-hero__proof .service-hero__stars span {
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 50% !important;
+    background: #a8ff3e !important;
+}
+
+/* hover */
+.service-hero--reference .service-hero__proof {
+    transition:
+        transform var(--transition-base),
+        filter var(--transition-base);
+}
+
+.service-hero--reference .service-hero__proof:hover {
+    transform: translateY(-50%) scale(1.04) !important;
+    filter: saturate(1.15) !important;
+}
+
+.service-hero--reference .service-hero__proof:hover strong {
+    color: #2d8f16 !important;
+}
+
+/* Tablet */
+@media (max-width: 1180px) {
+    .service-hero--reference .service-hero__proof {
+        right: 36px !important;
+        top: 52% !important;
+    }
+}
+
+/* Tablet portrait / mobile layout */
+@media (max-width: 900px) {
+    .service-hero--reference .service-hero__proof {
+        position: relative !important;
+        right: auto !important;
+        top: auto !important;
+        width: fit-content !important;
+        margin: 20px auto 0 !important;
+        transform: none !important;
+    }
+
+    .service-hero--reference .service-hero__proof:hover {
+        transform: scale(1.03) !important;
+    }
+}
+
+/* Mobile */
+@media (max-width: 520px) {
+    .service-hero--reference .service-hero__proof strong {
+        font-size: 25px !important;
+    }
+
+    .service-hero--reference .service-hero__proof small {
+        font-size: 10.5px !important;
+    }
+}
