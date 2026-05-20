@@ -41,7 +41,7 @@ window.SITE_CONFIG = {
 
         images: {
             hero: "./assets/images/hero-klm-agency.png",
-            about: "./assets/images/about-strategy.png",
+            about: "./assets/images/about-strategy.jpg",
             contact: "./assets/images/contact-klm-group.png"
         },
 
@@ -89,7 +89,7 @@ window.SITE_CONFIG = {
             shortTitle: "Google Ads",
             href: "google-ads.html",
             icon: "./assets/icons/icon-google-ads.png",
-            image: "./assets/images/service-google-ads.png",
+            image: "./assets/images/service-google-ads.jpg",
             heroImage: "./assets/images/google-ads-hero.png",
             pageTitle: "Google Ads Management",
             metaTitle: "Google Ads Management | KLM Group",

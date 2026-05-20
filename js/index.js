@@ -266,3 +266,120 @@
         return escapeHtml(value);
     }
 })();
+
+(function () {
+    document.addEventListener("DOMContentLoaded", initServicesSwitch);
+
+    function initServicesSwitch() {
+        const list = document.querySelector("[data-services-switch-list]");
+        const preview = document.querySelector("[data-services-switch-preview]");
+        const config = window.SITE_CONFIG;
+
+        if (!list || !preview || !config || !Array.isArray(config.services)) return;
+
+        const services = config.services;
+
+        list.innerHTML = services
+            .map((service, index) => {
+                return `
+                    <button 
+                        class="services-switch__tab${index === 0 ? " is-active" : ""}" 
+                        type="button"
+                        data-service-index="${index}"
+                        aria-pressed="${index === 0 ? "true" : "false"}"
+                    >
+                        <span class="services-switch__number">${String(index + 1).padStart(2, "0")}</span>
+
+                        <span class="services-switch__tab-content">
+                            <span class="services-switch__tab-title">${escapeHtml(service.title || service.shortTitle || "")}</span>
+                            <span class="services-switch__tab-text">${escapeHtml(service.summary || service.cardText || service.shortText || "")}</span>
+                        </span>
+
+                        <span class="services-switch__tab-arrow" aria-hidden="true">↗</span>
+                    </button>
+                `;
+            })
+            .join("");
+
+        renderPreview(services[0]);
+
+        list.addEventListener("click", (event) => {
+            const button = event.target.closest("[data-service-index]");
+            if (!button) return;
+
+            const index = Number(button.dataset.serviceIndex);
+            const service = services[index];
+
+            if (!service) return;
+
+            list.querySelectorAll(".services-switch__tab").forEach((tab) => {
+                tab.classList.remove("is-active");
+                tab.setAttribute("aria-pressed", "false");
+            });
+
+            button.classList.add("is-active");
+            button.setAttribute("aria-pressed", "true");
+
+            renderPreview(service);
+        });
+
+        function renderPreview(service) {
+            const image = getServiceImage(service);
+            const href = service.href || "#";
+
+            preview.setAttribute("href", href);
+            preview.setAttribute("aria-label", `Open ${service.title || "service"} page`);
+
+            preview.innerHTML = `
+                <span class="services-switch__preview-image">
+                    <img src="${escapeAttribute(image)}" alt="" loading="lazy">
+                </span>
+
+                <strong class="services-switch__preview-title">
+                    ${escapeHtml(service.title || "")}
+                </strong>
+
+                <span class="services-switch__preview-badge">
+                    <strong>${escapeHtml(getBadgeText(service))}</strong>
+                    <span aria-hidden="true"></span>
+                </span>
+            `;
+        }
+
+        function getServiceImage(service) {
+            return (
+                service.image ||
+                service.previewImage ||
+                service.cardImage ||
+                service.heroImage ||
+                "./assets/images/service-preview.png"
+            );
+        }
+
+        function getBadgeText(service) {
+            const id = String(service.id || "").toLowerCase();
+
+            if (id.includes("google")) return "ROI Focused Campaigns";
+            if (id.includes("seo")) return "Search Visibility Growth";
+            if (id.includes("social")) return "Audience Building";
+            if (id.includes("web")) return "Conversion Ready Design";
+            if (id.includes("conversion")) return "Better User Actions";
+            if (id.includes("local")) return "Local Search Presence";
+
+            return "Growth Focused Strategy";
+        }
+
+        function escapeHtml(value) {
+            return String(value || "")
+                .replaceAll("&", "&amp;")
+                .replaceAll("<", "&lt;")
+                .replaceAll(">", "&gt;")
+                .replaceAll('"', "&quot;")
+                .replaceAll("'", "&#039;");
+        }
+
+        function escapeAttribute(value) {
+            return escapeHtml(value);
+        }
+    }
+})();
