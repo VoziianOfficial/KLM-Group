@@ -19,6 +19,7 @@
         if (!menu) return;
 
         renderMobileMenu(menu);
+        createLucideIcons();
         setupInitialState(menu);
         bindMobileMenuEvents(menu);
     }
@@ -159,12 +160,7 @@
                 return `
           <a class="mobile-menu__service-link" href="${escapeAttribute(service.href)}" data-mobile-menu-link>
             <span class="mobile-menu__service-icon" aria-hidden="true">
-              <img 
-                src="${escapeAttribute(service.icon)}" 
-                alt="" 
-                onerror="this.hidden=true; this.nextElementSibling.hidden=false;"
-              >
-              <span class="mobile-menu__service-fallback" hidden></span>
+              <i data-lucide="${escapeAttribute(service.icon || "sparkles")}"></i>
             </span>
 
             <span class="mobile-menu__service-content">
@@ -175,6 +171,11 @@
         `;
             })
             .join("");
+    }
+
+    function createLucideIcons() {
+        if (!window.lucide || typeof window.lucide.createIcons !== "function") return;
+        window.lucide.createIcons();
     }
 
     function renderPhoneContact() {

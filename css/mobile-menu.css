@@ -380,15 +380,41 @@
     justify-content: center;
     width: 36px;
     height: 36px;
-    overflow: hidden;
+    flex: 0 0 auto;
+    border: 1px solid rgba(168, 255, 62, 0.22);
     border-radius: 14px;
-    background: rgba(168, 255, 62, 0.11);
+    background:
+        radial-gradient(circle at 35% 20%, rgba(168, 255, 62, 0.22), transparent 42%),
+        rgba(168, 255, 62, 0.08);
+    color: #a8ff3e;
+    transition:
+        transform var(--transition-base),
+        border-color var(--transition-base),
+        background var(--transition-base),
+        box-shadow var(--transition-base),
+        color var(--transition-base);
+}
+
+.mobile-menu__service-icon svg {
+    width: 18px;
+    height: 18px;
+    stroke: currentColor;
+    stroke-width: 2;
+}
+
+.mobile-menu__service-link:hover .mobile-menu__service-icon,
+.mobile-menu__service-link.is-active .mobile-menu__service-icon {
+    color: #d4ff78;
+    border-color: rgba(168, 255, 62, 0.48);
+    background: rgba(168, 255, 62, 0.14);
+    box-shadow:
+        0 0 0 5px rgba(168, 255, 62, 0.07),
+        0 12px 28px rgba(168, 255, 62, 0.14);
+    transform: translateY(-2px) rotate(-4deg);
 }
 
 .mobile-menu__service-icon img {
-    width: 21px;
-    height: 21px;
-    object-fit: contain;
+    display: none;
 }
 
 .mobile-menu__service-fallback {

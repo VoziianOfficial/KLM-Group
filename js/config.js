@@ -42,7 +42,7 @@ window.SITE_CONFIG = {
         images: {
             hero: "./assets/images/hero-klm-agency.png",
             about: "./assets/images/about-strategy.jpg",
-            contact: "./assets/images/contact-klm-group.png"
+            contact: "./assets/images/contact-klm-group.jpg"
         },
 
         icons: {
@@ -88,7 +88,7 @@ window.SITE_CONFIG = {
             title: "Google Ads",
             shortTitle: "Google Ads",
             href: "google-ads.html",
-            icon: "./assets/icons/icon-google-ads.png",
+            icon: "mouse-pointer-click",
             image: "./assets/images/service-google-ads.jpg",
             heroImage: "./assets/images/google-ads-hero.png",
             pageTitle: "Google Ads Management",
@@ -108,7 +108,7 @@ window.SITE_CONFIG = {
             title: "SEO Optimization",
             shortTitle: "SEO",
             href: "seo-optimization.html",
-            icon: "./assets/icons/icon-seo.png",
+            icon: "search-check",
             image: "./assets/images/service-seo-optimization.jpg",
             heroImage: "./assets/images/seo-optimization-hero.png",
             pageTitle: "SEO Optimization",
@@ -128,7 +128,7 @@ window.SITE_CONFIG = {
             title: "Social Media Marketing",
             shortTitle: "Social Media",
             href: "social-media-marketing.html",
-            icon: "./assets/icons/icon-social-media.png",
+            icon: "share-2",
             image: "./assets/images/service-social-media-marketing.png",
             heroImage: "./assets/images/social-media-marketing-hero.png",
             pageTitle: "Social Media Marketing",
@@ -148,7 +148,7 @@ window.SITE_CONFIG = {
             title: "Web Design",
             shortTitle: "Web Design",
             href: "web-design.html",
-            icon: "./assets/icons/icon-web-design.png",
+            icon: "monitor-smartphone",
             image: "./assets/images/service-web-design.png",
             heroImage: "./assets/images/web-design-hero.png",
             pageTitle: "Web Design",
@@ -168,7 +168,7 @@ window.SITE_CONFIG = {
             title: "Conversion Boost",
             shortTitle: "Conversion",
             href: "conversion-boost.html",
-            icon: "./assets/icons/icon-conversion.png",
+            icon: "trending-up",
             image: "./assets/images/service-conversion-boost.jpg",
             heroImage: "./assets/images/conversion-boost-hero.png",
             pageTitle: "Conversion Boost",
@@ -188,7 +188,7 @@ window.SITE_CONFIG = {
             title: "Local SEO",
             shortTitle: "Local SEO",
             href: "local-seo.html",
-            icon: "./assets/icons/icon-local-seo.png",
+            icon: "map-pin-check",
             image: "./assets/images/service-local-seo.png",
             heroImage: "./assets/images/local-seo-hero.png",
             pageTitle: "Local SEO",

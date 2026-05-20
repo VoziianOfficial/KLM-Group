@@ -16,6 +16,7 @@
         if (!header) return;
 
         renderHeader(header);
+        createLucideIcons();
         initHeaderDropdown(header);
         markActiveHeaderLinks(header);
     }
@@ -118,12 +119,7 @@
                 return `
           <a class="site-dropdown__link" href="${escapeAttribute(service.href)}">
             <span class="site-dropdown__icon" aria-hidden="true">
-              <img 
-                src="${escapeAttribute(service.icon)}" 
-                alt="" 
-                onerror="this.hidden=true; this.nextElementSibling.hidden=false;"
-              >
-              <span class="site-dropdown__fallback-icon" hidden></span>
+              <i data-lucide="${escapeAttribute(service.icon || "sparkles")}"></i>
             </span>
 
             <span class="site-dropdown__content">
@@ -136,6 +132,11 @@
         `;
             })
             .join("");
+    }
+
+    function createLucideIcons() {
+        if (!window.lucide || typeof window.lucide.createIcons !== "function") return;
+        window.lucide.createIcons();
     }
 
     function initHeaderDropdown(header) {

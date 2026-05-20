@@ -114,15 +114,6 @@
             <p class="site-footer__disclaimer">
               ${escapeHtml(config.disclaimer)}
             </p>
-
-            <a 
-              class="site-footer__domain" 
-              href="https://${escapeAttribute(config.domain)}" 
-              target="_blank" 
-              rel="noopener noreferrer"
-            >
-              ${escapeHtml(config.domain)}
-            </a>
           </div>
 
           <div class="site-footer__bottom">
