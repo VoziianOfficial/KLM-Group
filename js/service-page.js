@@ -997,31 +997,42 @@
         }
     }
 
-    function renderOtherServices(currentService) {
+    function renderOtherServices() {
         const container = document.querySelector("[data-other-services]");
-        if (!container) return;
 
-        const otherServices = config.services.filter((service) => {
-            return service.id !== currentService.id;
+        if (!container || !config.services) return;
+
+        const currentPage = getCurrentPage();
+
+        const services = config.services.filter((service) => {
+            const servicePage = service.href.replace("./", "");
+            return servicePage !== currentPage;
         });
 
-        container.innerHTML = otherServices
-            .map((service) => {
+        container.innerHTML = services
+            .map((service, index) => {
+                const image = `./assets/images/card-${index + 1}.jpg`;
+
                 return `
-          <a class="other-service-card" href="${escapeAttribute(service.href)}">
-            <span class="other-service-card__number">
-              ${escapeHtml(service.number)}
-            </span>
+                <a 
+                    class="other-service-card" 
+                    href="${escapeAttribute(service.href)}"
+                    style="--service-bg: url('${escapeAttribute(image)}');"
+                >
+                    <span class="other-service-card__number">
+                        ${String(index + 1).padStart(2, "0")}
+                    </span>
 
-            <h3 class="other-service-card__title">
-              ${escapeHtml(service.title)}
-            </h3>
+                    <h3 class="other-service-card__title">
+                        ${escapeHtml(service.title)}
+                    </h3>
 
-            <span class="link-arrow other-service-card__link">
-              Explore Service
-            </span>
-          </a>
-        `;
+                    <span class="other-service-card__link">
+                        Explore
+                        <span aria-hidden="true">→</span>
+                    </span>
+                </a>
+            `;
             })
             .join("");
     }

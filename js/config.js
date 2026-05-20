@@ -125,7 +125,7 @@ window.SITE_CONFIG = {
         {
             id: "social-media-marketing",
             number: "03",
-            title: "Social Media Marketing",
+            title: "Social Media",
             shortTitle: "Social Media",
             href: "social-media-marketing.html",
             icon: "share-2",
