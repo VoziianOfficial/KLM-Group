@@ -167,9 +167,7 @@
     color: var(--color-lime);
 }
 
-/* ================================
-   Compact Variant
-================================ */
+
 
 .policy-banner--compact {
     width: min(620px, calc(100% - 36px));
@@ -183,9 +181,7 @@
     justify-content: flex-start;
 }
 
-/* ================================
-   Responsive
-================================ */
+
 
 @media (max-width: 767px) {
     .policy-banner {

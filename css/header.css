@@ -434,9 +434,7 @@
     background: var(--color-lime);
 }
 
-/* ================================
-   Header Light Variant Support
-================================ */
+
 
 .site-header[data-theme="light"] .site-header__inner {
     border-color: rgba(5, 5, 5, 0.1);
@@ -461,9 +459,7 @@
     color: var(--color-text-dark);
 }
 
-/* ================================
-   Responsive
-================================ */
+
 
 @media (max-width: 1199px) {
     .site-header {

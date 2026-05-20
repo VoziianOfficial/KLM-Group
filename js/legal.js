@@ -20,9 +20,7 @@
         updateLegalDates();
     }
 
-    /* ================================
-       Business Data
-    ================================ */
+    
 
     function injectLegalBusinessData() {
         setText("[data-legal-company]", config.companyName);
@@ -43,9 +41,7 @@
         });
     }
 
-    /* ================================
-       Active Legal Links
-    ================================ */
+    
 
     function markActiveLegalLinks() {
         const currentPage = getCurrentPage();
@@ -64,9 +60,7 @@
         });
     }
 
-    /* ================================
-       Smooth Legal Anchor Scroll
-    ================================ */
+    
 
     function initLegalAnchorScroll() {
         document.querySelectorAll('.legal-document a[href^="#"], .legal-nav a[href^="#"]').forEach((link) => {
@@ -95,9 +89,7 @@
         });
     }
 
-    /* ================================
-       Reveal Effects
-    ================================ */
+    
 
     function initLegalRevealEffects() {
         const revealItems = document.querySelectorAll(
@@ -156,9 +148,7 @@
         document.head.appendChild(style);
     }
 
-    /* ================================
-       Dates
-    ================================ */
+    
 
     function updateLegalDates() {
         const year = new Date().getFullYear();
@@ -169,9 +159,7 @@
         setText("[data-last-updated]", readableDate);
     }
 
-    /* ================================
-       Helpers
-    ================================ */
+    
 
     function getCurrentPage() {
         const path = window.location.pathname;

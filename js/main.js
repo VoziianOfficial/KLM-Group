@@ -43,9 +43,7 @@
         }
     }
 
-    /* ================================
-       Page Meta
-    ================================ */
+    
 
     function applyPageMeta() {
         const page = getCurrentPage();
@@ -95,9 +93,7 @@
         });
     }
 
-    /* ================================
-       Global Content Injection
-    ================================ */
+    
 
     function injectGlobalContent() {
         setText("[data-company-name]", config.companyName);
@@ -263,9 +259,7 @@
         });
     }
 
-    /* ================================
-       Header Scroll
-    ================================ */
+    
 
     function initHeaderScroll() {
         const header = document.querySelector("[data-site-header], .site-header");
@@ -281,9 +275,7 @@
         window.addEventListener("scroll", updateHeader, { passive: true });
     }
 
-    /* ================================
-       Smooth Anchors
-    ================================ */
+    
 
     function initSmoothAnchorScroll() {
         document.querySelectorAll('a[href*="#"]').forEach((link) => {
@@ -324,9 +316,7 @@
         return header.offsetHeight + 14;
     }
 
-    /* ================================
-       FAQ Accordions
-    ================================ */
+    
 
     function initFaqAccordions() {
         document.querySelectorAll("[data-faq]").forEach((faqList) => {
@@ -397,9 +387,7 @@
         }
     }
 
-    /* ================================
-       Forms
-    ================================ */
+    
 
     function initForms() {
         document.querySelectorAll("[data-contact-form]").forEach((form) => {
@@ -540,9 +528,7 @@
         return /^[+()\-\s\d]{6,24}$/.test(value);
     }
 
-    /* ================================
-       Active Links
-    ================================ */
+    
 
     function initActiveLinks() {
         const currentPage = getCurrentPage();
@@ -616,9 +602,7 @@
         sections.forEach((section) => observer.observe(section));
     }
 
-    /* ================================
-       Link Safety
-    ================================ */
+    
 
     function preventEmptyLinks() {
         document.querySelectorAll('a[href="#"], a:not([href])').forEach((link) => {
@@ -630,9 +614,7 @@
         });
     }
 
-    /* ================================
-       Helpers
-    ================================ */
+    
 
     function getCurrentPage() {
         const path = window.location.pathname;

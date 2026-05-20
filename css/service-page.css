@@ -5,9 +5,7 @@
         var(--color-black);
 }
 
-/* ================================
-   Service Hero
-================================ */
+
 
 .service-hero {
     position: relative;
@@ -279,9 +277,7 @@
     background: var(--color-black);
 }
 
-/* ================================
-   Service Overview
-================================ */
+
 
 .service-overview {
     position: relative;
@@ -389,9 +385,7 @@
     line-height: 1.35;
 }
 
-/* ================================
-   What We Do
-================================ */
+
 
 .service-do {
     position: relative;
@@ -477,9 +471,7 @@
     line-height: 1.62;
 }
 
-/* ================================
-   Why It Matters
-================================ */
+
 
 .service-value {
     position: relative;
@@ -626,9 +618,7 @@
     background: var(--color-lime);
 }
 
-/* ================================
-   How KLM Group Works
-================================ */
+
 
 .service-work {
     position: relative;
@@ -703,9 +693,7 @@
     line-height: 1.65;
 }
 
-/* ================================
-   Outcomes
-================================ */
+
 
 .service-outcomes {
     position: relative;
@@ -785,9 +773,7 @@
     line-height: 1.55;
 }
 
-/* ================================
-   FAQ
-================================ */
+
 
 .service-faq {
     position: relative;
@@ -814,9 +800,7 @@
     line-height: 1.72;
 }
 
-/* ================================
-   Other Services
-================================ */
+
 
 .other-services {
     position: relative;
@@ -888,9 +872,7 @@
     z-index: 1;
 }
 
-/* ================================
-   CTA
-================================ */
+
 
 .service-cta {
     position: relative;
@@ -958,9 +940,7 @@
     justify-content: flex-end;
 }
 
-/* ================================
-   Responsive
-================================ */
+
 
 @media (max-width: 1199px) {
     .service-hero__shell {
@@ -1179,10 +1159,7 @@
     }
 }
 
-/* =====================================================
-   SERVICE HERO — EXACT POSTER REFERENCE LAYOUT
-   Put this at the VERY END of service-page.css
-===================================================== */
+
 
 .service-hero.service-hero--reference {
     position: relative;
@@ -1196,7 +1173,7 @@
     margin-inline: auto !important;
 }
 
-/* MAIN WHITE POSTER */
+
 .service-hero--reference .service-hero__panel {
     position: relative !important;
     width: 100% !important;
@@ -1215,7 +1192,7 @@
         inset 0 0 0 1px rgba(255, 255, 255, 0.76) !important;
 }
 
-/* выключаем всё старое, если осталось */
+
 .service-hero--reference .service-breadcrumb,
 .service-hero--reference .service-hero__visual,
 .service-hero--reference .service-hero__image,
@@ -1225,7 +1202,7 @@
     display: none !important;
 }
 
-/* TOP TITLE — EXACT CENTER */
+
 .service-hero--reference .service-hero__top {
     position: absolute !important;
     left: 50% !important;
@@ -1264,7 +1241,7 @@
     letter-spacing: -0.073em !important;
 }
 
-/* MIDDLE WRAPPER — DOES NOT CONTROL LAYOUT */
+
 .service-hero--reference .service-hero__middle {
     display: block !important;
     position: static !important;
@@ -1272,7 +1249,7 @@
     min-height: 0 !important;
 }
 
-/* LEFT TEXT BLOCK */
+
 .service-hero--reference .service-hero__left {
     position: absolute !important;
     left: clamp(54px, 7vw, 104px) !important;
@@ -1320,7 +1297,7 @@
     background: rgba(168, 255, 62, 0.2) !important;
 }
 
-/* CENTER PHOTO */
+
 .service-hero--reference .service-hero__center {
     position: absolute !important;
     left: 50% !important;
@@ -1360,7 +1337,7 @@
     filter: grayscale(1) contrast(1.07) !important;
 }
 
-/* BUTTONS ON PHOTO BOTTOM */
+
 .service-hero--reference .service-hero__actions {
     position: absolute !important;
     left: 50% !important;
@@ -1402,7 +1379,7 @@
     color: #ffffff !important;
 }
 
-/* RIGHT EXPERIENCE */
+
 .service-hero--reference .service-hero__right {
     position: absolute !important;
     right: clamp(66px, 8.5vw, 128px) !important;
@@ -1445,7 +1422,7 @@
     line-height: 1 !important;
 }
 
-/* GREEN DECOR */
+
 .service-hero--reference .service-hero__sun {
     position: absolute !important;
     left: clamp(26px, 3vw, 44px) !important;
@@ -1496,9 +1473,7 @@
     transform: translate(-50%, -50%) rotate(-38deg) !important;
 }
 
-/* =====================================================
-   TABLET
-===================================================== */
+
 
 @media (max-width: 1100px) {
     .service-hero--reference .service-hero__shell {
@@ -1535,9 +1510,7 @@
     }
 }
 
-/* =====================================================
-   MOBILE
-===================================================== */
+
 
 @media (max-width: 767px) {
     .service-hero.service-hero--reference {
@@ -1640,9 +1613,7 @@
     }
 }
 
-/* =====================================================
-   SMALL MOBILE
-===================================================== */
+
 
 @media (max-width: 479px) {
     .service-hero--reference .service-hero__shell {
@@ -1683,12 +1654,9 @@
     }
 }
 
-/* =====================================================
-   SERVICE HERO REFERENCE — FINAL POSITION FIX
-   Header spacing + title + left text + buttons
-===================================================== */
 
-/* Секция больше не залезает под sticky/fixed header */
+
+
 .service-hero.service-hero--reference {
     padding-top: calc(var(--header-height, 86px) + 22px) !important;
     padding-bottom: clamp(54px, 6vw, 86px) !important;
@@ -1696,7 +1664,7 @@
     overflow: visible !important;
 }
 
-/* Белая poster-карточка */
+
 .service-hero--reference .service-hero__panel {
     position: relative !important;
     height: clamp(560px, 46vw, 650px) !important;
@@ -1709,12 +1677,12 @@
         linear-gradient(180deg, #ffffff 0%, #f8f8f1 100%) !important;
 }
 
-/* Badge на референсе нет — убираем, чтобы заголовок стал как на фото */
+
 .service-hero--reference .service-hero__badge {
     display: none !important;
 }
 
-/* Заголовок: точное верхнее центральное расположение */
+
 .service-hero--reference .service-hero__top {
     position: absolute !important;
     left: 50% !important;
@@ -1741,7 +1709,7 @@
     letter-spacing: -0.065em !important;
 }
 
-/* Левая текстовая группа как на фото */
+
 .service-hero--reference .service-hero__left {
     position: absolute !important;
     left: clamp(58px, 7.2vw, 112px) !important;
@@ -1777,7 +1745,7 @@
     text-decoration: none !important;
 }
 
-/* Центральное фото ниже заголовка, как на референсе */
+
 .service-hero--reference .service-hero__center {
     position: absolute !important;
     left: 50% !important;
@@ -1819,7 +1787,7 @@
     filter: grayscale(1) contrast(1.07) !important;
 }
 
-/* Кнопки: именно как на фото — маленькая темная капсула поверх фото */
+
 .service-hero--reference .service-hero__actions {
     position: absolute !important;
     left: 50% !important;
@@ -1867,7 +1835,7 @@
     color: #ffffff !important;
 }
 
-/* Правая метрика */
+
 .service-hero--reference .service-hero__right {
     position: absolute !important;
     right: clamp(72px, 8.5vw, 128px) !important;
@@ -1910,7 +1878,7 @@
     line-height: 1 !important;
 }
 
-/* Декор чуть ниже, чтобы не мешал заголовку */
+
 .service-hero--reference .service-hero__sun {
     left: clamp(26px, 3vw, 44px) !important;
     top: clamp(26px, 3vw, 44px) !important;
@@ -1926,9 +1894,7 @@
     top: 31% !important;
 }
 
-/* =====================================================
-   Tablet
-===================================================== */
+
 
 @media (max-width: 1100px) {
     .service-hero.service-hero--reference {
@@ -1963,9 +1929,7 @@
     }
 }
 
-/* =====================================================
-   Mobile
-===================================================== */
+
 
 @media (max-width: 767px) {
     .service-hero.service-hero--reference {
@@ -2040,25 +2004,20 @@
     }
 }
 
-/* =====================================================
-   SERVICE HERO REFERENCE — FINAL RESPONSIVE ADAPTATION
-   Put this block at the VERY END of service-page.css
-===================================================== */
 
-/* базово убираем серый круг, если он больше не нужен */
+
+
 .service-hero--reference .service-hero__circle {
     display: none !important;
 }
 
-/* нормальный отступ от хедера */
+
 .service-hero.service-hero--reference {
     padding-top: calc(var(--header-height, 86px) + 22px) !important;
     padding-bottom: clamp(44px, 6vw, 78px) !important;
 }
 
-/* ===============================
-   Large tablet / small laptop
-================================ */
+
 
 @media (max-width: 1180px) {
     .service-hero--reference .service-hero__shell {
@@ -2115,10 +2074,7 @@
     }
 }
 
-/* ===============================
-   Tablet portrait
-   делаем композицию компактнее, без огромной высоты
-================================ */
+
 
 @media (max-width: 900px) {
     .service-hero.service-hero--reference {
@@ -2220,9 +2176,7 @@
     }
 }
 
-/* ===============================
-   Mobile
-================================ */
+
 
 @media (max-width: 767px) {
     .service-hero.service-hero--reference {
@@ -2281,9 +2235,7 @@
     }
 }
 
-/* ===============================
-   Small mobile
-================================ */
+
 
 @media (max-width: 520px) {
     .service-hero--reference .service-hero__panel {
@@ -2327,19 +2279,14 @@
     }
 }
 
-/* =====================================================
-   Conversion Boost — Smaller hero photo
-===================================================== */
+
 
 body[data-service-id="conversion-boost"] .service-hero--reference [data-service-hero-image] {
     transform-origin: 50% 100% !important;
     transform: translateX(-50%) scale(0.86) !important;
 }
 
-/* =====================================================
-   Service Hero Title — Animated Gradient + Hover
-   Put at the VERY END of service-page.css
-===================================================== */
+
 
 .service-hero--reference .service-hero__title {
     position: relative !important;
@@ -2377,7 +2324,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
         letter-spacing 0.45s ease !important;
 }
 
-/* если внутри h1 есть span — тоже делаем прозрачным */
+
 .service-hero--reference .service-hero__title span {
     color: inherit !important;
     background: inherit !important;
@@ -2387,7 +2334,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
     background-clip: text !important;
 }
 
-/* мягкое постоянное переливание */
+
 .service-hero--reference .service-hero__title {
     animation: serviceTitleGradient 7s ease-in-out infinite !important;
 }
@@ -2406,7 +2353,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
     }
 }
 
-/* hover: дороже, ярче, но без дергания */
+
 .service-hero--reference .service-hero__title:hover {
     background-position: 100% 50% !important;
     filter: saturate(1.18) contrast(1.06) !important;
@@ -2417,7 +2364,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
         0 18px 42px rgba(5, 5, 5, 0.1) !important;
 }
 
-/* аккуратная световая линия при наведении */
+
 .service-hero--reference .service-hero__title::after {
     content: "";
     position: absolute;
@@ -2439,7 +2386,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
     opacity: 1;
 }
 
-/* на мобилках hover не нужен, оставляем просто красивый градиент */
+
 @media (hover: none) {
     .service-hero--reference .service-hero__title:hover {
         transform: none !important;
@@ -2453,7 +2400,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
     }
 }
 
-/* если пользователь отключил анимации */
+
 @media (prefers-reduced-motion: reduce) {
     .service-hero--reference .service-hero__title {
         animation: none !important;
@@ -2461,10 +2408,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
     }
 }
 
-/* =====================================================
-   Service Hero Right Proof Block
-   replaces service-hero__right
-===================================================== */
+
 
 .service-hero--reference .service-hero__proof {
     position: absolute !important;
@@ -2509,7 +2453,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
     line-height: 1.35 !important;
 }
 
-/* stars внутри нового блока */
+
 .service-hero--reference .service-hero__proof .service-hero__stars {
     display: flex !important;
     gap: 4px !important;
@@ -2523,7 +2467,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
     background: #a8ff3e !important;
 }
 
-/* hover */
+
 .service-hero--reference .service-hero__proof {
     transition:
         transform var(--transition-base),
@@ -2539,7 +2483,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
     color: #2d8f16 !important;
 }
 
-/* Tablet */
+
 @media (max-width: 1180px) {
     .service-hero--reference .service-hero__proof {
         right: 36px !important;
@@ -2547,7 +2491,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
     }
 }
 
-/* Tablet portrait / mobile layout */
+
 @media (max-width: 900px) {
     .service-hero--reference .service-hero__proof {
         position: relative !important;
@@ -2563,7 +2507,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
     }
 }
 
-/* Mobile */
+
 @media (max-width: 520px) {
     .service-hero--reference .service-hero__proof strong {
         font-size: 25px !important;
@@ -2574,10 +2518,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
     }
 }
 
-/* =====================================================
-   Service Hero Image Color Fix
-   Put at the VERY END of service-page.css
-===================================================== */
+
 
 .service-hero--reference .service-hero__person,
 .service-hero--reference [data-service-hero-image] {
@@ -2585,16 +2526,13 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
     opacity: 1 !important;
 }
 
-/* если есть старый вариант service hero с image-card */
+
 .service-hero__image img {
     filter: none !important;
     opacity: 1 !important;
 }
 
-/* =====================================================
-   Service Do — Reference Cards Section
-   Put at the VERY END of service-page.css
-===================================================== */
+
 
 .service-do.service-do--reference {
     position: relative;
@@ -2721,7 +2659,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
     line-height: 1.65;
 }
 
-/* GRID */
+
 
 .service-do--reference .service-do__grid {
     position: relative;
@@ -2731,7 +2669,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
     gap: clamp(12px, 1.4vw, 18px);
 }
 
-/* CARDS */
+
 
 .service-do--reference .service-do-card {
     position: relative;
@@ -2789,7 +2727,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
     box-shadow: 0 0 0 5px rgba(5, 5, 5, 0.06);
 }
 
-/* если JS рендерит number — превращаем его в маленькую иконку/номер внутри зелёного блока */
+
 .service-do--reference .service-do-card__number {
     position: relative;
     z-index: 2;
@@ -2806,7 +2744,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
     letter-spacing: -0.03em;
 }
 
-/* если number не нужен визуально — будет выглядеть как знак */
+
 .service-do--reference .service-do-card__number::before {
     content: "";
     position: absolute;
@@ -2847,7 +2785,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
     line-height: 1.55;
 }
 
-/* HOVERS */
+
 
 .service-do--reference .service-do-card:hover {
     transform: translateY(-6px);
@@ -2880,15 +2818,13 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
     color: #10230a;
 }
 
-/* убираем старые конфликтные стили */
+
 .service-do--reference .section-panel,
 .service-do--reference .section-head.center {
     all: unset;
 }
 
-/* =====================================================
-   Tablet
-===================================================== */
+
 
 @media (max-width: 1100px) {
     .service-do--reference .service-do__grid {
@@ -2928,9 +2864,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
     }
 }
 
-/* =====================================================
-   Mobile
-===================================================== */
+
 
 @media (max-width: 640px) {
     .service-do.service-do--reference {
@@ -2989,7 +2923,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
     }
 }
 
-/* Touch devices: no sticky hover issues */
+
 @media (hover: none) {
     .service-do--reference .service-do-card:hover {
         transform: none;
@@ -3009,10 +2943,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
         transition: none;
     }
 }
-/* =====================================================
-   Service Do Cards — Juicy Premium Hover Effects
-   Put at the VERY END of service-page.css
-===================================================== */
+
 
 .service-do--reference .service-do-card {
     isolation: isolate;
@@ -3025,7 +2956,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
         filter 0.42s ease !important;
 }
 
-/* большая мягкая подсветка внутри карточки */
+
 .service-do--reference .service-do-card>* {
     position: relative;
     z-index: 3;
@@ -3050,7 +2981,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
         opacity 0.42s ease !important;
 }
 
-/* световой блик */
+
 .service-do--reference .service-do-card .service-do-card__content::before {
     content: "";
     position: absolute;
@@ -3072,7 +3003,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
         transform 0.75s ease !important;
 }
 
-/* основной hover */
+
 .service-do--reference .service-do-card:hover {
     transform: translateY(-8px) scale(1.018) !important;
     border-color: rgba(168, 255, 62, 0.56) !important;
@@ -3087,7 +3018,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
         inset 0 1px 0 rgba(255, 255, 255, 0.95) !important;
 }
 
-/* зелёная иконка оживает */
+
 .service-do--reference .service-do-card:hover::before {
     transform: rotate(-8deg) scale(1.12) !important;
     filter: saturate(1.25) contrast(1.04) !important;
@@ -3097,7 +3028,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
         inset 0 0 0 1px rgba(5, 5, 5, 0.08) !important;
 }
 
-/* правая точка превращается в зелёный индикатор */
+
 .service-do--reference .service-do-card:hover::after {
     opacity: 1 !important;
     background: #a8ff3e !important;
@@ -3107,13 +3038,13 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
         0 0 22px rgba(168, 255, 62, 0.58) !important;
 }
 
-/* блик проходит по карточке */
+
 .service-do--reference .service-do-card:hover .service-do-card__content::before {
     opacity: 1 !important;
     transform: rotate(18deg) translateX(360%) !important;
 }
 
-/* заголовок сочнее */
+
 .service-do--reference .service-do-card .service-do-card__title {
     transition:
         color 0.35s ease,
@@ -3129,7 +3060,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
     text-shadow: 0 10px 24px rgba(168, 255, 62, 0.16) !important;
 }
 
-/* текст становится чуть контрастнее */
+
 .service-do--reference .service-do-card .service-do-card__text {
     transition:
         color 0.35s ease,
@@ -3141,7 +3072,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
     transform: translateX(2px) !important;
 }
 
-/* номер/иконка внутри зелёного квадрата */
+
 .service-do--reference .service-do-card__number {
     transition:
         transform 0.42s ease,
@@ -3153,7 +3084,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
     filter: saturate(1.2) !important;
 }
 
-/* разные оттенки hover для каждой карточки, чтобы было живее */
+
 .service-do--reference .service-do-card:nth-child(2):hover {
     background:
         radial-gradient(circle at 18% 0%, rgba(197, 255, 88, 0.24), transparent 36%),
@@ -3178,12 +3109,12 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
         inset 0 1px 0 rgba(255, 255, 255, 0.95) !important;
 }
 
-/* активный press effect */
+
 .service-do--reference .service-do-card:active {
     transform: translateY(-4px) scale(0.995) !important;
 }
 
-/* touch devices */
+
 @media (hover: none) {
 
     .service-do--reference .service-do-card:hover,
@@ -3211,10 +3142,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
     }
 }
 
-/* =====================================================
-   Other Services — Premium Compact Dock
-   Put at the VERY END of service-page.css
-===================================================== */
+
 
 .other-services.other-services--dock {
     position: relative;
@@ -3247,7 +3175,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
     color: rgba(247, 247, 239, 0.58) !important;
 }
 
-/* GRID */
+
 
 .other-services--dock .other-services__grid {
     display: grid !important;
@@ -3264,7 +3192,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
         inset 0 1px 0 rgba(255, 255, 255, 0.06) !important;
 }
 
-/* CARD */
+
 
 .other-services--dock .other-service-card {
     position: relative !important;
@@ -3385,7 +3313,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
         transform var(--transition-base);
 }
 
-/* HOVER */
+
 
 .other-services--dock .other-service-card:hover {
     transform: translateY(-5px) !important;
@@ -3424,7 +3352,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
     transform: translateY(0);
 }
 
-/* TABLET */
+
 
 @media (max-width: 1100px) {
     .other-services--dock .other-services__grid {
@@ -3443,7 +3371,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
     }
 }
 
-/* MOBILE */
+
 
 @media (max-width: 560px) {
     .other-services.other-services--dock {
@@ -3496,10 +3424,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
     }
 }
 
-/* =====================================================
-   Other Services Dock — Add Photos Only
-   Put at the VERY END of service-page.css
-===================================================== */
+
 
 .other-services--dock .other-service-card {
     background:
@@ -3513,7 +3438,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
     background-repeat: no-repeat !important;
 }
 
-/* чтобы текст остался читаемый */
+
 .other-services--dock .other-service-card__title {
     text-shadow: 0 12px 34px rgba(0, 0, 0, 0.72) !important;
 }
@@ -3522,7 +3447,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
     text-shadow: 0 10px 28px rgba(0, 0, 0, 0.6) !important;
 }
 
-/* hover — фото чуть ярче, но стиль dock сохраняется */
+
 .other-services--dock .other-service-card:hover {
     background:
         linear-gradient(180deg, rgba(5, 5, 5, 0.16), rgba(5, 5, 5, 0.76)),
@@ -3534,7 +3459,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
     background-position: center, center, center, center !important;
 }
 
-/* номер поверх фото должен быть плотнее */
+
 .other-services--dock .other-service-card__number {
     background: rgba(5, 5, 5, 0.58) !important;
     color: #a8ff3e !important;
@@ -3548,10 +3473,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
     color: #050505 !important;
 }
 
-/* =====================================================
-   Service Value — Right Photo Card Only
-   Put at the VERY END of service-page.css
-===================================================== */
+
 
 .service-value__visual.service-value__visual--photo {
     position: relative !important;
@@ -3646,7 +3568,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
     letter-spacing: -0.055em;
 }
 
-/* Tablet */
+
 
 @media (max-width: 991px) {
     .service-value__visual.service-value__visual--photo {
@@ -3659,7 +3581,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
     }
 }
 
-/* Mobile */
+
 
 @media (max-width: 767px) {
     .service-value__visual.service-value__visual--photo {
@@ -3695,10 +3617,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
     }
 }
 
-/* =====================================================
-   Remove Top Padding For Service Page Sections
-   Put at the VERY END of service-page.css
-===================================================== */
+
 
 .service-value,
 .service-work,
@@ -3708,12 +3627,9 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
     padding-top: 0 !important;
 }
 
-/* =====================================================
-   Service Overview Metrics — Tablet Row + Mobile Rows
-   Put at the VERY END of service-page.css
-===================================================== */
 
-/* Tablet: карточки в один ряд */
+
+
 @media (min-width: 768px) and (max-width: 991px) {
     .service-overview__metrics {
         grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
@@ -3735,7 +3651,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
     }
 }
 
-/* Mobile: каждая карточка в одну строку — цифра/иконка слева, текст справа */
+
 @media (max-width: 767px) {
     .service-overview__metrics {
         grid-template-columns: 1fr !important;
@@ -3777,7 +3693,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
     }
 }
 
-/* Small mobile: чуть компактнее */
+
 @media (max-width: 479px) {
     .service-overview__metric {
         gap: 12px !important;
@@ -3794,10 +3710,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
     }
 }
 
-/* =====================================================
-   Service Work — Mobile Row Cards
-   Put at the VERY END of service-page.css
-===================================================== */
+
 
 @media (max-width: 767px) {
     .service-work__grid {
@@ -3860,7 +3773,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
     }
 }
 
-/* Small mobile — компактнее */
+
 @media (max-width: 479px) {
     .service-work-step {
         grid-template-columns: 50px minmax(0, 1fr) !important;
@@ -3885,10 +3798,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
     }
 }
 
-/* =====================================================
-   Service Focus Strip — Horizontal Info Section
-   Put at the VERY END of service-page.css
-===================================================== */
+
 
 .service-focus-strip {
     position: relative;
@@ -4041,7 +3951,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
         0 0 0 6px rgba(168, 255, 62, 0.1);
 }
 
-/* Tablet */
+
 
 @media (max-width: 1100px) {
     .service-focus-strip__panel {
@@ -4063,7 +3973,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
     }
 }
 
-/* Mobile */
+
 
 @media (max-width: 767px) {
     .service-focus-strip {
@@ -4099,7 +4009,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
     }
 }
 
-/* Small mobile */
+
 
 @media (max-width: 479px) {
     .service-focus-strip__panel {
@@ -4127,12 +4037,9 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
     }
 }
 
-/* =====================================================
-   Service Focus Strip — Background Photo On Panel
-   Put at the VERY END of service-page.css
-===================================================== */
 
-/* фото по умолчанию */
+
+
 .service-focus-strip__panel {
     --focus-strip-bg: url("../assets/images/conversion-boost-value.webp");
 
@@ -4146,7 +4053,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
     background-position: center, center, center, center !important;
 }
 
-/* чтобы фото было видно красиво, но не мешало тексту */
+
 .service-focus-strip__panel::after {
     content: "";
     position: absolute;
@@ -4159,7 +4066,7 @@ body[data-service-id="conversion-boost"] .service-hero--reference [data-service-
         radial-gradient(circle at 82% 20%, rgba(168, 255, 62, 0.16), transparent 28%);
 }
 
-/* hover — фото чуть оживает */
+
 .service-focus-strip__panel {
     transition:
         border-color var(--transition-base),

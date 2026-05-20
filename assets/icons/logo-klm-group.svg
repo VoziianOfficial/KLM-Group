@@ -41,11 +41,11 @@
     </filter>
   </defs>
 
-  <!-- Symbol: performance lens + marketing growth core -->
+  
   <g filter="url(#klmShadow)">
     <circle cx="64" cy="64" r="50" fill="url(#klmGlow)"/>
 
-    <!-- clean realistic blades -->
+    
     <path d="M64 10C78 10 92 15 103 24C87 23 73 27 61 35C54 24 45 17 33 13C43 11 53 10 64 10Z" fill="url(#klmBladeB)"/>
     <path d="M103 24C114 34 120 48 120 63C110 51 97 43 82 39C84 27 81 17 75 8C86 11 96 16 103 24Z" fill="url(#klmBladeA)"/>
     <path d="M120 63C120 78 114 92 103 103C101 87 95 74 84 63C94 55 101 44 103 31C113 40 119 51 120 63Z" fill="url(#klmBladeB)"/>
@@ -55,23 +55,23 @@
     <path d="M10 62C11 47 17 33 28 23C30 38 36 51 46 62C36 70 29 81 26 94C16 84 10 73 10 62Z" fill="url(#klmBladeB)"/>
     <path d="M28 23C39 14 53 9 68 10C56 20 49 33 46 48C33 51 22 58 15 69C15 50 19 35 28 23Z" fill="url(#klmBladeA)"/>
 
-    <!-- realistic dark core -->
+    
     <circle cx="64" cy="64" r="23" fill="url(#klmCore)"/>
     <circle cx="64" cy="64" r="23" stroke="#A8FF3E" stroke-opacity="0.16" stroke-width="1.4"/>
 
-    <!-- marketing analytics bars inside core -->
+    
     <rect x="52" y="68" width="5" height="12" rx="2.5" fill="#F7F7EF" opacity="0.82"/>
     <rect x="61" y="61" width="5" height="19" rx="2.5" fill="#F7F7EF" opacity="0.9"/>
     <rect x="70" y="53" width="5" height="27" rx="2.5" fill="#A8FF3E" opacity="0.95"/>
 
-    <!-- subtle growth line, not too obvious -->
+    
     <path d="M49 82C58 90 75 90 84 78" stroke="#A8FF3E" stroke-width="2.4" stroke-linecap="round" opacity="0.58"/>
 
-    <!-- premium highlight -->
+    
     <ellipse cx="78" cy="29" rx="25" ry="15" fill="url(#klmShine)"/>
   </g>
 
-  <!-- Wordmark -->
+  
   <text
     x="154"
     y="81"

@@ -5,9 +5,7 @@
         var(--color-black);
 }
 
-/* ================================
-   Legal Hero
-================================ */
+
 
 .legal-hero {
     position: relative;
@@ -122,9 +120,7 @@
     box-shadow: 0 0 0 6px rgba(168, 255, 62, 0.18);
 }
 
-/* ================================
-   Legal Content
-================================ */
+
 
 .legal-content {
     position: relative;
@@ -409,9 +405,7 @@
     font-weight: 900;
 }
 
-/* ================================
-   Legal Table
-================================ */
+
 
 .legal-table-wrap {
     width: 100%;
@@ -454,9 +448,7 @@
     border-bottom: 0;
 }
 
-/* ================================
-   Responsive
-================================ */
+
 
 @media (max-width: 1199px) {
     .legal-hero__shell {

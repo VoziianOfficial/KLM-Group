@@ -5,9 +5,7 @@
         var(--color-black);
 }
 
-/* ================================
-   Hero
-================================ */
+
 
 .home-hero {
     position: relative;
@@ -281,9 +279,7 @@
     background: var(--color-black);
 }
 
-/* ================================
-   Stats
-================================ */
+
 
 .stats-strip {
     position: relative;
@@ -343,9 +339,7 @@
     line-height: 1.45;
 }
 
-/* ================================
-   About
-================================ */
+
 
 .about-section {
     position: relative;
@@ -536,9 +530,7 @@
     line-height: 1.55;
 }
 
-/* ================================
-   Services
-================================ */
+
 
 .services-section {
     position: relative;
@@ -743,9 +735,7 @@
     margin-top: 22px;
 }
 
-/* ================================
-   Statement Strip
-================================ */
+
 
 .statement-strip {
     position: relative;
@@ -788,9 +778,7 @@
     box-shadow: 0 0 0 12px rgba(168, 255, 62, 0.11);
 }
 
-/* ================================
-   Process
-================================ */
+
 
 .process-section {
     position: relative;
@@ -890,9 +878,7 @@
     line-height: 1.65;
 }
 
-/* ================================
-   Approach
-================================ */
+
 
 .approach-section {
     position: relative;
@@ -991,9 +977,7 @@
     line-height: 1.65;
 }
 
-/* ================================
-   Contact
-================================ */
+
 
 .contact-section {
     position: relative;
@@ -1186,9 +1170,7 @@ a.contact-item:hover {
     line-height: 1.65;
 }
 
-/* ================================
-   Responsive
-================================ */
+
 
 @media (max-width: 1199px) {
 
@@ -1479,9 +1461,7 @@ a.contact-item:hover {
     }
 }
 
-/* ================================
-   Clean Hero Like Reference
-================================ */
+
 
 .index-page .main {
     padding-top: 96px;
@@ -1788,16 +1768,14 @@ a.contact-item:hover {
     opacity: 0.8;
 }
 
-/* убираем старые hero элементы, если они где-то остались */
+
 .home-hero--clean .home-hero__image-card,
 .home-hero--clean .home-hero__floating-card,
 .home-hero--clean .home-hero__signal {
     display: none;
 }
 
-/* ================================
-   Responsive
-================================ */
+
 
 @media (max-width: 1199px) {
     .index-page .main {
@@ -1917,9 +1895,7 @@ a.contact-item:hover {
     }
 }
 
-/* ================================
-   Premium Stats Strip
-================================ */
+
 
 .stats-strip--premium {
     position: relative;
@@ -2029,14 +2005,12 @@ a.contact-item:hover {
     text-overflow: ellipsis;
 }
 
-/* убираем старую точку, если была */
+
 .stats-strip--premium .stats-strip__item::before {
     display: none;
 }
 
-/* ================================
-   Responsive
-================================ */
+
 
 @media (max-width: 1024px) {
     .stats-strip--premium .stats-strip__panel {
@@ -2088,10 +2062,7 @@ a.contact-item:hover {
     }
 }
 
-/* ================================
-   Hero + Stats Desktop Wrapper
-   Like Reference
-================================ */
+
 
 .home-showcase {
     position: relative;
@@ -2138,14 +2109,12 @@ a.contact-item:hover {
     min-height: 82px;
 }
 
-/* убираем старое отрицательное поднятие */
+
 .stats-strip--premium {
     margin-top: 0;
 }
 
-/* ================================
-   Desktop only tuning
-================================ */
+
 
 @media (min-width: 1025px) {
     .index-page .main {
@@ -2162,9 +2131,7 @@ a.contact-item:hover {
     }
 }
 
-/* ================================
-   Tablet / Mobile
-================================ */
+
 
 @media (max-width: 1024px) {
     .home-showcase {
@@ -2202,9 +2169,7 @@ a.contact-item:hover {
     }
 }
 
-/* ================================
-   Stats Icons Hover Effects
-================================ */
+
 
 .stats-strip--premium .stats-strip__item.reveal-item.is-visible {
     transition:
@@ -2277,7 +2242,7 @@ a.contact-item:hover {
     color: rgba(247, 247, 239, 0.72);
 }
 
-/* чтобы на touch-устройствах не было странного зависания hover */
+
 @media (hover: none) {
     .stats-strip--premium .stats-strip__item.reveal-item.is-visible:hover .stats-strip__icon {
         transform: none;
@@ -2297,9 +2262,7 @@ a.contact-item:hover {
         transition: none;
     }
 }
-/* ================================
-   About Studio Section
-================================ */
+
 
 .about-section--studio {
     position: relative;
@@ -2598,9 +2561,7 @@ a.contact-item:hover {
     display: none;
 }
 
-/* ================================
-   Responsive About Studio
-================================ */
+
 
 @media (max-width: 1024px) {
     .about-section--studio .about-section__grid {
@@ -2659,17 +2620,15 @@ a.contact-item:hover {
     }
 }
 
-/* ================================
-   About Studio Fix + Better Dashboard
-================================ */
 
-/* убираем верхний и нижний padding только у этой секции */
+
+
 .about-section.about-section--studio {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
 }
 
-/* если нужен небольшой внутренний воздух на мобилке — можно оставить */
+
 @media (max-width: 767px) {
     .about-section.about-section--studio {
         padding-top: 0 !important;
@@ -2677,20 +2636,18 @@ a.contact-item:hover {
     }
 }
 
-/* убираем нижний margin у section-head только внутри about */
+
 .about-section--studio .section-head,
 .about-section--studio .about-section__head {
     margin-bottom: 0 !important;
 }
 
-/* если section-head внутри about создает лишний gap */
+
 .about-section--studio .about-section__content {
     gap: 20px;
 }
 
-/* ================================
-   Realistic Dashboard Card
-================================ */
+
 
 .about-section--studio .about-section__dashboard-card {
     position: absolute;
@@ -2894,13 +2851,13 @@ a.contact-item:hover {
     filter: brightness(1.08);
 }
 
-/* отключаем старые элементы dashboard, если где-то остались */
+
 .about-section--studio .about-section__dashboard-top,
 .about-section--studio .about-section__dashboard-lines {
     display: none !important;
 }
 
-/* responsive для нового dashboard */
+
 @media (max-width: 767px) {
     .about-section--studio .about-section__dashboard-card {
         right: 14px;
@@ -2937,9 +2894,7 @@ a.contact-item:hover {
     }
 }
 
-/* ================================
-   Services Switch Section
-================================ */
+
 
 .services-section--switch {
     position: relative;
@@ -3133,7 +3088,7 @@ a.contact-item:hover {
     background: rgba(5, 5, 5, 0.12);
 }
 
-/* Right preview card */
+
 
 .services-switch__preview {
     position: relative;
@@ -3259,7 +3214,7 @@ a.contact-item:hover {
     transform: translateY(0);
 }
 
-/* Old services section conflict protection */
+
 .services-section--switch .services-section__panel,
 .services-section--switch .services-showcase,
 .services-section--switch .service-tab,
@@ -3267,9 +3222,7 @@ a.contact-item:hover {
     all: unset;
 }
 
-/* ================================
-   Responsive Services Switch
-================================ */
+
 
 @media (max-width: 1100px) {
 
@@ -3339,10 +3292,7 @@ a.contact-item:hover {
     }
 }
 
-/* ================================
-   Services Switch Content Fix
-   показываем весь контент
-================================ */
+
 
 .services-switch__tab {
     min-height: auto;
@@ -3374,19 +3324,19 @@ a.contact-item:hover {
     margin-top: 2px;
 }
 
-/* чтобы слева список не выглядел зажатым */
+
 .services-switch__list {
     gap: 10px;
 }
 
-/* если справа title тоже обрезается */
+
 .services-switch__preview-title {
     max-width: 420px;
     white-space: normal;
     overflow: visible;
 }
 
-/* на мобилке делаем еще мягче */
+
 @media (max-width: 767px) {
     .services-switch__tab {
         grid-template-columns: 28px minmax(0, 1fr) 28px;
@@ -3402,9 +3352,7 @@ a.contact-item:hover {
     }
 }
 
-/* ==========================================
-   Full Width Statement Strip - Like Reference
-========================================== */
+
 
 .statement-strip {
     position: relative;
@@ -3516,7 +3464,7 @@ a.contact-item:hover {
     text-shadow: 0 0 18px rgba(168, 255, 62, 0.4);
 }
 
-/* hover на всю зону слова + соседние разделители можно чуть оживить */
+
 .statement-strip__track:hover .statement-strip__word {
     opacity: 0.88;
 }
@@ -3525,9 +3473,7 @@ a.contact-item:hover {
     opacity: 1;
 }
 
-/* =========================
-   Tablet
-========================= */
+
 
 @media (max-width: 991px) {
     .statement-strip__track {
@@ -3551,9 +3497,7 @@ a.contact-item:hover {
     }
 }
 
-/* =========================
-   Mobile
-========================= */
+
 
 @media (max-width: 767px) {
     .statement-strip {
@@ -3587,9 +3531,7 @@ a.contact-item:hover {
     }
 }
 
-/* =========================
-   Small mobile
-========================= */
+
 
 @media (max-width: 479px) {
     .statement-strip__track {
@@ -3608,7 +3550,7 @@ a.contact-item:hover {
     }
 }
 
-/* touch devices */
+
 @media (hover: none) {
     .statement-strip__word:hover {
         color: #f7f7ef;
@@ -3632,10 +3574,7 @@ a.contact-item:hover {
     }
 }
 
-/* =====================================================
-   FINAL RESPONSIVE FIX — About Studio Section
-   desktop / tablet / mobile clean adaptation
-===================================================== */
+
 
 .about-section.about-section--studio {
     position: relative;
@@ -3721,7 +3660,7 @@ a.contact-item:hover {
     margin-top: 8px;
 }
 
-/* visual base */
+
 
 .about-section--studio .about-section__visual {
     position: relative;
@@ -3782,7 +3721,7 @@ a.contact-item:hover {
     letter-spacing: -0.035em;
 }
 
-/* dashboard desktop */
+
 
 .about-section--studio .about-section__dashboard-card {
     position: absolute;
@@ -3966,7 +3905,7 @@ a.contact-item:hover {
     filter: brightness(1.08);
 }
 
-/* скрываем старые элементы, если остались */
+
 .about-section--studio .about-section__dashboard-top,
 .about-section--studio .about-section__dashboard-lines,
 .about-section--studio .about-section__highlight,
@@ -3976,9 +3915,7 @@ a.contact-item:hover {
     display: none !important;
 }
 
-/* ================================
-   Tablet: 768–1024
-================================ */
+
 
 @media (max-width: 1024px) {
     .about-section.about-section--studio {
@@ -4043,9 +3980,7 @@ a.contact-item:hover {
     }
 }
 
-/* ================================
-   Mobile: до 767
-================================ */
+
 
 @media (max-width: 767px) {
     .about-section.about-section--studio {
@@ -4200,9 +4135,7 @@ a.contact-item:hover {
     }
 }
 
-/* ================================
-   Small mobile: до 479
-================================ */
+
 
 @media (max-width: 479px) {
     .about-section--studio .container {
@@ -4262,7 +4195,7 @@ a.contact-item:hover {
     }
 }
 
-/* touch devices */
+
 @media (hover: none) {
     .about-section--studio .about-section__dashboard-card:hover {
         transform: none;
@@ -4275,9 +4208,7 @@ a.contact-item:hover {
 }
 
 
-/* =====================================================
-   Process Compact Section — Like Reference
-===================================================== */
+
 
 .process-section--compact {
     position: relative;
@@ -4369,7 +4300,7 @@ a.contact-item:hover {
     gap: 14px;
 }
 
-/* cards */
+
 
 .process-section--compact .process-card,
 .process-compact__card {
@@ -4449,7 +4380,7 @@ a.contact-item:hover {
     opacity: 1;
 }
 
-/* icons */
+
 
 .process-section--compact .process-card__icon {
     position: relative;
@@ -4476,7 +4407,7 @@ a.contact-item:hover {
         box-shadow var(--transition-base);
 }
 
-/* Desktop: icon top-right corner */
+
 @media (min-width: 1101px) {
     .process-section--compact .process-card,
     .process-compact__card {
@@ -4519,7 +4450,7 @@ a.contact-item:hover {
         0 14px 34px rgba(168, 255, 62, 0.16);
 }
 
-/* text */
+
 
 .process-section--compact .process-card__body {
     position: relative;
@@ -4555,9 +4486,7 @@ a.contact-item:hover {
     color: rgba(247, 247, 239, 0.72);
 }
 
-/* =====================================================
-   Tablet
-===================================================== */
+
 
 @media (max-width: 1100px) {
     .process-section--compact .container-wide {
@@ -4589,9 +4518,7 @@ a.contact-item:hover {
     }
 }
 
-/* =====================================================
-   Mobile
-===================================================== */
+
 
 @media (max-width: 767px) {
     .process-section--compact {
@@ -4657,9 +4584,7 @@ a.contact-item:hover {
     }
 }
 
-/* =====================================================
-   Small mobile
-===================================================== */
+
 
 @media (max-width: 479px) {
     .process-section--compact .container-wide {
@@ -4688,7 +4613,7 @@ a.contact-item:hover {
     }
 }
 
-/* touch devices */
+
 @media (hover: none) {
     .process-section--compact .process-card:hover {
         transform: none;
@@ -4711,9 +4636,7 @@ a.contact-item:hover {
     }
 }
 
-/* =====================================================
-   Process Compact — Tablet/Mobile Icon Top Right Fix
-===================================================== */
+
 
 @media (max-width: 1100px) {
 
@@ -4756,7 +4679,7 @@ a.contact-item:hover {
     }
 }
 
-/* Tablet — 2 columns, compact height */
+
 @media (min-width: 768px) and (max-width: 1100px) {
 
     .process-section--compact .process-grid,
@@ -4771,7 +4694,7 @@ a.contact-item:hover {
     }
 }
 
-/* Mobile — one column, icon top right */
+
 @media (max-width: 767px) {
 
     .process-section--compact .process-grid,
@@ -4817,7 +4740,7 @@ a.contact-item:hover {
     }
 }
 
-/* Small mobile — even denser */
+
 @media (max-width: 479px) {
 
     .process-section--compact .process-card,
@@ -4844,17 +4767,13 @@ a.contact-item:hover {
         line-height: 1.42 !important;
     }
 }
-/* =====================================================
-   Process Section — Remove Bottom Padding
-===================================================== */
+
 
 .process-section.process-section--compact {
     padding-bottom: 0 !important;
 }
 
-/* =====================================================
-   Contact Compact Section — Like Reference
-===================================================== */
+
 
 .contact-section--compact {
     position: relative;
@@ -4908,7 +4827,7 @@ a.contact-item:hover {
     z-index: 1;
 }
 
-/* left info */
+
 
 .contact-compact__info {
     display: grid;
@@ -5018,7 +4937,7 @@ a.contact-item:hover {
     white-space: nowrap;
 }
 
-/* form */
+
 
 .contact-section--compact .contact-form-card,
 .contact-compact__form {
@@ -5151,7 +5070,7 @@ a.contact-item:hover {
     font-weight: 700;
 }
 
-/* image */
+
 
 .contact-compact__image {
     min-height: 420px;
@@ -5203,7 +5122,7 @@ a.contact-item:hover {
     filter: drop-shadow(0 0 12px rgba(168, 255, 62, 0.22));
 }
 
-/* old contact conflict protection */
+
 .contact-section--compact .contact-section__grid,
 .contact-section--compact .contact-section__info,
 .contact-section--compact .contact-section__content,
@@ -5212,9 +5131,7 @@ a.contact-item:hover {
     all: unset;
 }
 
-/* =====================================================
-   Tablet
-===================================================== */
+
 
 @media (max-width: 1100px) {
     .contact-section--compact {
@@ -5260,9 +5177,7 @@ a.contact-item:hover {
     }
 }
 
-/* =====================================================
-   Mobile
-===================================================== */
+
 
 @media (max-width: 767px) {
     .contact-section--compact {
@@ -5324,9 +5239,7 @@ a.contact-item:hover {
     }
 }
 
-/* =====================================================
-   Small mobile
-===================================================== */
+
 
 @media (max-width: 479px) {
     .contact-section--compact .container-wide {
@@ -5365,9 +5278,7 @@ a.contact-item:hover {
         height: 32px;
     }
 }
-/* =====================================================
-   Contact Compact — Remove Top Padding On All Devices
-===================================================== */
+
 
 .contact-section.contact-section--compact {
     padding-top: 0 !important;
@@ -5391,10 +5302,7 @@ a.contact-item:hover {
     }
 }
 
-/* =====================================================
-   Approach Signal Section
-   full editorial image + line-based marketing system
-===================================================== */
+
 
 .approach-section--signal {
     position: relative;
@@ -5415,7 +5323,7 @@ a.contact-item:hover {
     margin-inline: auto;
 }
 
-/* left image */
+
 
 .approach-signal__media {
     position: relative;
@@ -5490,7 +5398,7 @@ a.contact-item:hover {
     letter-spacing: -0.06em;
 }
 
-/* right content */
+
 
 .approach-signal__content {
     display: grid;
@@ -5555,7 +5463,7 @@ a.contact-item:hover {
     box-shadow: 0 0 0 5px rgba(168, 255, 62, 0.08);
 }
 
-/* line-based flow */
+
 
 .approach-signal__flow {
     display: grid;
@@ -5682,7 +5590,7 @@ a.contact-item:hover {
     border-radius: 999px;
 }
 
-/* kill old approach styles only in this variant */
+
 
 .approach-section--signal .section-panel,
 .approach-section--signal .approach-panel,
@@ -5692,9 +5600,7 @@ a.contact-item:hover {
     all: unset;
 }
 
-/* =====================================================
-   Tablet
-===================================================== */
+
 
 @media (max-width: 1100px) {
     .approach-section--signal {
@@ -5742,9 +5648,7 @@ a.contact-item:hover {
     }
 }
 
-/* =====================================================
-   Mobile
-===================================================== */
+
 
 @media (max-width: 767px) {
     .approach-section--signal {
@@ -5827,9 +5731,7 @@ a.contact-item:hover {
     }
 }
 
-/* =====================================================
-   Small Mobile
-===================================================== */
+
 
 @media (max-width: 479px) {
     .approach-signal {
@@ -5863,7 +5765,7 @@ a.contact-item:hover {
     }
 }
 
-/* touch devices */
+
 
 @media (hover: none) {
     .approach-signal__media:hover img {
@@ -5895,9 +5797,7 @@ a.contact-item:hover {
     }
 }
 
-/* =====================================================
-   Approach Signal — Fix Hover Overflow
-===================================================== */
+
 
 .approach-signal,
 .approach-signal__content,
@@ -5919,7 +5819,7 @@ a.contact-item:hover {
     padding-left: 0 !important;
 }
 
-/* двигаем только внутренний текст, а не всю строку */
+
 .approach-signal__step-content {
     min-width: 0;
     transition: transform var(--transition-base);
@@ -5929,12 +5829,12 @@ a.contact-item:hover {
     transform: translateX(12px);
 }
 
-/* номер двигаем аккуратно, без расширения всей строки */
+
 .approach-signal__step:hover .approach-signal__number {
     transform: translateX(8px) translateY(-2px);
 }
 
-/* стрелка не должна вылезать за правый край */
+
 .approach-signal__arrow {
     justify-self: end;
     flex-shrink: 0;
@@ -5944,7 +5844,7 @@ a.contact-item:hover {
     transform: translateX(0) rotate(-18deg);
 }
 
-/* tablet */
+
 @media (max-width: 1100px) {
     .approach-signal__step {
         padding-right: 0 !important;
@@ -5959,7 +5859,7 @@ a.contact-item:hover {
     }
 }
 
-/* mobile */
+
 @media (max-width: 767px) {
     .approach-signal__step {
         padding-right: 0 !important;
@@ -5978,7 +5878,7 @@ a.contact-item:hover {
     }
 }
 
-/* touch devices */
+
 @media (hover: none) {
 
     .approach-signal__step:hover .approach-signal__step-content,
@@ -5987,11 +5887,9 @@ a.contact-item:hover {
     }
 }
 
-/* =====================================================
-   Process Cards — Smaller Height On All Devices
-===================================================== */
 
-/* Desktop */
+
+
 .process-section--compact .process-grid,
 .process-section--compact .process-compact__grid {
     align-items: stretch !important;
@@ -6037,7 +5935,7 @@ a.contact-item:hover {
     line-height: 1.42 !important;
 }
 
-/* Tablet */
+
 @media (min-width: 768px) and (max-width: 1100px) {
 
     .process-section--compact .process-card,
@@ -6066,7 +5964,7 @@ a.contact-item:hover {
     }
 }
 
-/* Mobile */
+
 @media (max-width: 767px) {
 
     .process-section--compact .process-grid,
@@ -6108,7 +6006,7 @@ a.contact-item:hover {
     }
 }
 
-/* Small Mobile */
+
 @media (max-width: 479px) {
 
     .process-section--compact .process-card,

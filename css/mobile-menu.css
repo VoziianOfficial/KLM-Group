@@ -552,9 +552,7 @@
     white-space: nowrap;
 }
 
-/* ================================
-   Animation State Support
-================================ */
+
 
 .mobile-menu:not(.is-open) .mobile-menu__nav-link,
 .mobile-menu:not(.is-open) .mobile-menu__service-link,
@@ -628,9 +626,7 @@
     }
 }
 
-/* ================================
-   Responsive
-================================ */
+
 
 @media (min-width: 1200px) {
     .mobile-menu {

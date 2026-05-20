@@ -19,9 +19,7 @@
         initRevealEffects();
     }
 
-    /* ================================
-       Services Showcase
-    ================================ */
+    
 
     function renderIndexServices() {
         const list = document.querySelector("[data-index-services-list]");
@@ -134,9 +132,7 @@
     `;
     }
 
-    /* ================================
-       Hero Parallax
-    ================================ */
+    
 
     function initHeroParallax() {
         const hero = document.querySelector(".home-hero");
@@ -180,9 +176,7 @@
         window.addEventListener("resize", requestUpdate);
     }
 
-    /* ================================
-       Reveal Effects
-    ================================ */
+    
 
     function initRevealEffects() {
         const revealItems = document.querySelectorAll(
@@ -241,9 +235,7 @@
         document.head.appendChild(style);
     }
 
-    /* ================================
-       Helpers
-    ================================ */
+    
 
     function prefersReducedMotion() {
         return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
