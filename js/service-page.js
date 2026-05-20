@@ -1011,7 +1011,7 @@
 
         container.innerHTML = services
             .map((service, index) => {
-                const image = `./assets/images/card-${index + 1}.jpg`;
+                const image = `../assets/images/card-${index + 1}.jpg`;
 
                 return `
                 <a 
