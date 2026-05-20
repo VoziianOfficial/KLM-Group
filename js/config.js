@@ -46,11 +46,11 @@ window.SITE_CONFIG = {
         },
 
         icons: {
-            email: "./assets/icons/icon-email.png",
-            phone: "./assets/icons/icon-phone.png",
-            location: "./assets/icons/icon-location.png",
-            check: "./assets/icons/icon-check.png",
-            arrow: "./assets/icons/icon-arrow.png"
+            email: "./assets/icons/icon-email.svg",
+            phone: "./assets/icons/icon-phone.svg",
+            location: "./assets/icons/icon-location.svg",
+            check: "./assets/icons/icon-check.svg",
+            arrow: "./assets/icons/icon-arrow.svg"
         }
     },
 
@@ -109,7 +109,7 @@ window.SITE_CONFIG = {
             shortTitle: "SEO",
             href: "seo-optimization.html",
             icon: "./assets/icons/icon-seo.png",
-            image: "./assets/images/service-seo-optimization.png",
+            image: "./assets/images/service-seo-optimization.jpg",
             heroImage: "./assets/images/seo-optimization-hero.png",
             pageTitle: "SEO Optimization",
             metaTitle: "SEO Optimization | KLM Group",
@@ -169,7 +169,7 @@ window.SITE_CONFIG = {
             shortTitle: "Conversion",
             href: "conversion-boost.html",
             icon: "./assets/icons/icon-conversion.png",
-            image: "./assets/images/service-conversion-boost.png",
+            image: "./assets/images/service-conversion-boost.jpg",
             heroImage: "./assets/images/conversion-boost-hero.png",
             pageTitle: "Conversion Boost",
             metaTitle: "Conversion Boost | KLM Group",

@@ -111,7 +111,7 @@
 
         setText("[data-email-text]", config.email.value);
         setText("[data-email-label]", config.email.label);
-        setText("[data-address-text]", config.address.full);
+        injectAddressText();
 
         if (config.phone && config.phone.number) {
             setText("[data-phone-text]", config.phone.number);
@@ -138,6 +138,45 @@
                 "aria-label": `Call ${config.companyName}`
             });
         }
+    }
+
+    function injectAddressText() {
+        const fullAddress = config.address && config.address.full ? config.address.full : "";
+        const shortAddress = getShortAddress(config.address);
+
+        document.querySelectorAll("[data-address-text]").forEach((element) => {
+            const useShort = Boolean(element.closest(".contact-section--compact"));
+            element.textContent = useShort ? shortAddress : fullAddress;
+        });
+    }
+
+    function getShortAddress(address) {
+        if (!address) return "";
+
+        const street = String(address.street || "").trim();
+        const city = String(address.city || "").trim();
+        const cityShort = getPrimaryCityName(city);
+
+        if (street && cityShort) return `${street}, ${cityShort}`;
+        if (street) return street;
+        if (cityShort) return cityShort;
+
+        return String(address.full || "").trim();
+    }
+
+    function getPrimaryCityName(city) {
+        if (!city) return "";
+
+        const separators = ["–", "-"];
+        let result = city;
+
+        separators.forEach((sep) => {
+            if (result.includes(sep)) {
+                result = result.split(sep)[0];
+            }
+        });
+
+        return result.replace(/[,\\s]+$/g, "").trim();
     }
 
     function injectContactLinks() {

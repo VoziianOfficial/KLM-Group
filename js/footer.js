@@ -51,7 +51,7 @@
                 ${escapeHtml(config.footer.description)}
               </p>
 
-              <div class="site-footer__contact-list">
+                <div class="site-footer__contact-list">
                 <a class="site-footer__contact-link" href="${escapeAttribute(config.email.href)}">
                   <span class="site-footer__contact-icon" aria-hidden="true">
                     <img 
@@ -66,7 +66,13 @@
 
                 ${renderPhoneContact()}
 
-                <div class="site-footer__contact-text">
+                <a
+                  class="site-footer__contact-text site-footer__contact-link"
+                  href="https://www.google.com/maps/search/?api=1&query=${escapeAttribute(encodeURIComponent(config.address.full))}"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Open ${escapeAttribute(config.companyName)} address in Google Maps"
+                >
                   <span class="site-footer__contact-icon" aria-hidden="true">
                     <img 
                       src="${escapeAttribute(config.assets.icons.location)}" 
@@ -76,7 +82,7 @@
                     <span class="site-footer__contact-fallback" hidden></span>
                   </span>
                   <span>${escapeHtml(config.address.full)}</span>
-                </div>
+                </a>
               </div>
             </div>
 
