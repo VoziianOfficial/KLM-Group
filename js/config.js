@@ -35,8 +35,8 @@ window.SITE_CONFIG = {
 
     assets: {
         logo: {
-            full: "./assets/icons/logo-klm-group.png",
-            symbol: "./assets/icons/logo-klm-symbol.png"
+            full: "./assets/icons/logo-klm-group.svg",
+            symbol: "./assets/icons/logo-klm-symbol.svg"
         },
 
         images: {

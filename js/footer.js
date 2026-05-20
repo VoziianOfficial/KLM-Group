@@ -39,20 +39,12 @@
         <div class="site-footer__panel">
           <div class="site-footer__top">
             <div class="site-footer__brand">
-              <a class="site-footer__logo" href="index.html#home" aria-label="${escapeHtml(config.companyName)} home">
-                <span class="site-footer__logo-mark" aria-hidden="true">
-                  <img 
-                    src="${escapeAttribute(config.assets.logo.symbol)}" 
-                    alt="" 
-                    onerror="this.hidden=true; this.nextElementSibling.hidden=false;"
-                  >
-                  <span class="site-footer__generated-mark" hidden></span>
-                </span>
-
-                <span class="site-footer__logo-text">
-                  <span class="site-footer__logo-name">${escapeHtml(config.companyName)}</span>
-                  <span class="site-footer__logo-label">${escapeHtml(config.brand.descriptor)}</span>
-                </span>
+              <a class="site-footer__logo site-footer__logo--image" href="index.html#home" aria-label="${escapeHtml(config.companyName)} home">
+                <img
+                  class="site-footer__logo-image"
+                  src="${escapeAttribute(config.assets.logo.full)}"
+                  alt="${escapeAttribute(config.companyName)} logo"
+                >
               </a>
 
               <p class="site-footer__description">

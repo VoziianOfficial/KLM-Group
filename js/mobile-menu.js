@@ -42,20 +42,12 @@
         menu.innerHTML = `
       <div class="mobile-menu__panel" role="dialog" aria-modal="true" aria-label="Mobile navigation">
         <div class="mobile-menu__top">
-          <a class="mobile-menu__logo" href="index.html#home" aria-label="${escapeHtml(config.companyName)} home" data-mobile-menu-link>
-            <span class="mobile-menu__logo-mark" aria-hidden="true">
-              <img 
-                src="${escapeAttribute(config.assets.logo.symbol)}" 
-                alt="" 
-                onerror="this.hidden=true; this.nextElementSibling.hidden=false;"
-              >
-              <span class="mobile-menu__generated-mark" hidden></span>
-            </span>
-
-            <span class="mobile-menu__logo-text">
-              <span class="mobile-menu__logo-name">${escapeHtml(config.companyName)}</span>
-              <span class="mobile-menu__logo-label">${escapeHtml(config.brand.descriptor)}</span>
-            </span>
+          <a class="mobile-menu__logo mobile-menu__logo--image" href="index.html#home" aria-label="${escapeHtml(config.companyName)} home" data-mobile-menu-link>
+            <img
+              class="mobile-menu__logo-image"
+              src="${escapeAttribute(config.assets.logo.full)}"
+              alt="${escapeAttribute(config.companyName)} logo"
+            >
           </a>
 
           <button 

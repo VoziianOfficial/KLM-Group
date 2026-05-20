@@ -711,3 +711,37 @@
         border-radius: 13px;
     }
 }
+
+.mobile-menu__logo--image {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 196px;
+    height: 54px;
+    min-width: 196px;
+    overflow: visible;
+}
+
+.mobile-menu__logo-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: left center;
+}
+
+@media (max-width: 767px) {
+    .mobile-menu__logo--image {
+        width: 168px;
+        height: 46px;
+        min-width: 168px;
+    }
+}
+
+@media (max-width: 379px) {
+    .mobile-menu__logo--image {
+        width: 144px;
+        height: 40px;
+        min-width: 144px;
+    }
+}

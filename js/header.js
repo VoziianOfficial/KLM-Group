@@ -37,21 +37,13 @@
     function renderHeader(header) {
         header.innerHTML = `
       <div class="site-header__inner">
-        <a class="site-logo" href="index.html#home" aria-label="${escapeHtml(config.companyName)} home">
-          <span class="site-logo__mark" aria-hidden="true">
-            <img 
-              src="${escapeAttribute(config.assets.logo.symbol)}" 
-              alt="" 
-              onerror="this.hidden=true; this.nextElementSibling.hidden=false;"
-            >
-            <span class="site-logo__generated-mark" hidden></span>
-          </span>
-
-          <span class="site-logo__text">
-            <span class="site-logo__name">${escapeHtml(config.companyName)}</span>
-            <span class="site-logo__descriptor">${escapeHtml(config.brand.descriptor)}</span>
-          </span>
-        </a>
+        <a class="site-logo site-logo--image" href="index.html#home" aria-label="${escapeHtml(config.companyName)} home">
+  <img
+    class="site-logo__image"
+    src="${escapeAttribute(config.assets.logo.full)}"
+    alt="${escapeAttribute(config.companyName)} logo"
+  >
+</a>
 
         <nav class="site-nav" aria-label="Primary navigation">
           <ul class="site-nav__list">

@@ -507,3 +507,34 @@
         font-size: 13px;
     }
 }
+
+.site-footer__logo--image {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 280px;
+    height: 76px;
+    overflow: visible;
+}
+
+.site-footer__logo-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: left center;
+}
+
+@media (max-width: 767px) {
+    .site-footer__logo--image {
+        width: 230px;
+        height: 64px;
+    }
+}
+
+@media (max-width: 479px) {
+    .site-footer__logo--image {
+        width: 198px;
+        height: 56px;
+    }
+}
