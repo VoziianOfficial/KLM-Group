@@ -215,6 +215,11 @@
 
         openButtons.forEach((button) => {
             button.addEventListener("click", () => {
+                if (menu.classList.contains("is-open")) {
+                    closeMobileMenu(menu);
+                    return;
+                }
+
                 openMobileMenu(menu, button);
             });
         });

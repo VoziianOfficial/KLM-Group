@@ -149,7 +149,7 @@ window.SITE_CONFIG = {
             shortTitle: "Web Design",
             href: "web-design.html",
             icon: "monitor-smartphone",
-            image: "./assets/images/service-web-design.png",
+            image: "./assets/images/service-web-design.jpg",
             heroImage: "./assets/images/web-design-hero.png",
             pageTitle: "Web Design",
             metaTitle: "Web Design | KLM Group",
