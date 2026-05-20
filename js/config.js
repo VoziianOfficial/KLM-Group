@@ -40,7 +40,7 @@ window.SITE_CONFIG = {
         },
 
         images: {
-            hero: "./assets/images/hero-klm-agency.png",
+            hero: "./assets/images/hero-card.webp",
             about: "./assets/images/about-strategy.jpg",
             contact: "./assets/images/contact-klm-group.jpg"
         },
@@ -90,7 +90,7 @@ window.SITE_CONFIG = {
             href: "google-ads.html",
             icon: "mouse-pointer-click",
             image: "./assets/images/service-google-ads.jpg",
-            heroImage: "./assets/images/google-ads-hero.png",
+            heroImage: "./assets/images/google-ads-hero.webp",
             pageTitle: "Google Ads Management",
             metaTitle: "Google Ads Management | KLM Group",
             metaDescription:
@@ -110,7 +110,7 @@ window.SITE_CONFIG = {
             href: "seo-optimization.html",
             icon: "search-check",
             image: "./assets/images/service-seo-optimization.jpg",
-            heroImage: "./assets/images/seo-optimization-hero.png",
+            heroImage: "./assets/images/seo-optimization-hero.webp",
             pageTitle: "SEO Optimization",
             metaTitle: "SEO Optimization | KLM Group",
             metaDescription:
@@ -129,8 +129,8 @@ window.SITE_CONFIG = {
             shortTitle: "Social Media",
             href: "social-media-marketing.html",
             icon: "share-2",
-            image: "./assets/images/service-social-media-marketing.png",
-            heroImage: "./assets/images/social-media-marketing-hero.png",
+            image: "./assets/images/service-social-media-marketing.webp",
+            heroImage: "./assets/images/social-media-marketing-hero.webp",
             pageTitle: "Social Media Marketing",
             metaTitle: "Social Media Marketing | KLM Group",
             metaDescription:
@@ -150,7 +150,7 @@ window.SITE_CONFIG = {
             href: "web-design.html",
             icon: "monitor-smartphone",
             image: "./assets/images/service-web-design.jpg",
-            heroImage: "./assets/images/web-design-hero.png",
+            heroImage: "./assets/images/web-design-hero.webp",
             pageTitle: "Web Design",
             metaTitle: "Web Design | KLM Group",
             metaDescription:
@@ -169,8 +169,8 @@ window.SITE_CONFIG = {
             shortTitle: "Conversion",
             href: "conversion-boost.html",
             icon: "trending-up",
-            image: "./assets/images/service-conversion-boost.jpg",
-            heroImage: "./assets/images/conversion-boost-hero.png",
+            image: "./assets/images/service-conversion-boost.webp",
+            heroImage: "./assets/images/conversion-boost-hero.webp",
             pageTitle: "Conversion Boost",
             metaTitle: "Conversion Boost | KLM Group",
             metaDescription:
@@ -189,8 +189,8 @@ window.SITE_CONFIG = {
             shortTitle: "Local SEO",
             href: "local-seo.html",
             icon: "map-pin-check",
-            image: "./assets/images/service-local-seo.png",
-            heroImage: "./assets/images/local-seo-hero.png",
+            image: "./assets/images/service-local-seo.webp",
+            heroImage: "./assets/images/local-seo-hero.webp",
             pageTitle: "Local SEO",
             metaTitle: "Local SEO | KLM Group",
             metaDescription:

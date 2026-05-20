@@ -1011,7 +1011,14 @@
 
         container.innerHTML = services
             .map((service, index) => {
-                const image = `../assets/images/card-${index + 1}.jpg`;
+                const rawImage =
+                    service.image ||
+                    service.previewImage ||
+                    service.heroImage ||
+                    service.cardImage ||
+                    "";
+
+                const image = toCssAssetUrl(rawImage);
 
                 return `
                 <a 
@@ -1035,6 +1042,21 @@
             `;
             })
             .join("");
+    }
+
+    function toCssAssetUrl(path) {
+        const value = String(path || "");
+        if (!value) return "";
+
+        if (value.startsWith("./assets/")) {
+            return `../${value.slice(2)}`;
+        }
+
+        if (value.startsWith("assets/")) {
+            return `../${value}`;
+        }
+
+        return value;
     }
 
     function setSelectedServiceOnForms(serviceTitle) {

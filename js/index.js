@@ -352,7 +352,7 @@
                 service.previewImage ||
                 service.cardImage ||
                 service.heroImage ||
-                "./assets/images/service-preview.png"
+                "./assets/images/service-web-design.jpg"
             );
         }
 
